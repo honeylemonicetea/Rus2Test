@@ -132,9 +132,6 @@ a{
     justify-content: space-between;
 }
 
-.main__head-top_mobile{
-    display: none;
-}
 
 
 .main__head-top h1{
@@ -173,8 +170,6 @@ a{
     gap: 8px;
 }
 
-
-
 .main__about-us{
     padding:0 28px 51px 34px;
     display: flex;
@@ -210,12 +205,13 @@ a{
     display: grid;
 }
 
-.main__repair-brands_mobile, .categories_mobile{
-    display: none;
-}
+.main__head-top_mobile,
+.main__repair-brands_mobile, 
+.categories_mobile, 
 .swiper_mobile{
     display: none;
 }
+ 
 
 
 .main__brand-card{
@@ -289,9 +285,6 @@ a{
         display: none;
     }
 
-    .main__categories {
-        display: flex;
-    }
     .main__categories a{
         width: max-content;
     }
@@ -322,7 +315,6 @@ a{
         width: 100%;
     }
 
-
     .main__repair-brands{
         gap: 16px 24px;
         grid-template-columns: repeat(4, minmax(224px, 240px));
@@ -331,12 +323,13 @@ a{
         
 }
 
-@media (max-width:320px) {
-    .categries_desktop{
+@media (max-width:420px) {
+    .categories_desktop,
+    .main__repair-expand{
         display: none;
     }
     .categories_mobile{
-        display: block;
+        display: flex;
     }
     .categories_mobile .swiper-wrapper{
         width: max-content;

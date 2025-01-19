@@ -16,15 +16,6 @@ buttonClose.onclick = function(){
 }
 
 
-// Добавление свайпера, если размер экрана маленький
-let categoryWrapper = document.querySelector(".main__categories")
-let slides = categoryWrapper.querySelectorAll("a")
-let repairWrapper = document.querySelector(".main__repair-brands")
-let repairSlides = repairWrapper.querySelectorAll("a")
-
- 
-
-
 
 // sliders
 

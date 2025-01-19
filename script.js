@@ -22,20 +22,7 @@ let slides = categoryWrapper.querySelectorAll("a")
 let repairWrapper = document.querySelector(".main__repair-brands")
 let repairSlides = repairWrapper.querySelectorAll("a")
 
-function addSlides(){
-    if (window.screen.width <= 320) {
-        slides.forEach(e=>e.classList.add("swiper-slide"))
-        repairSlides.forEach(e=>e.classList.add("swiper-slide"))
-    } else {
-        slides.forEach(e=>e.classList.remove("swiper-slide"))
-        repairSlides.forEach(e=>e.classList.remove("swiper-slide"))
-    }
-}
-addSlides()
-window.onresize = ()=>{
-    console.log("change")
-    addSlides()
-}
+ 
 
 
 

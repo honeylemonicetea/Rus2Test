@@ -248,7 +248,9 @@ a{
 .footer-container a, .footer-container p{
     color: var(--grey);
 }
-
+.footer-container p:nth-of-type(2){
+    text-align: right;
+}
 
 
 @media (max-width:768px) {
@@ -398,4 +400,8 @@ a{
         text-align: center;
         gap: 16px;
     }
+    .footer-container p:nth-of-type(2){
+        text-align: center;
+    }
+    
 }

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__nav-top">
+        <div class="nav__logo-wrapper">
+          <button class="nav__nav-close_mobile">
+            <img src="./img/icons/close.svg" alt="" />
+          </button>
+          <img src="./img/icons/logo.svg" alt="" />
+        </div>
+        <a href="">
+          <img src="./img/icons/search.svg" alt="" />
+        </a>
+      </div>
+      <ul class="nav__nav-links">
+        <li>
+          <a href="">Ремонт техники</a>
+        </li>
+        <li>
+          <a href="">Услуги и сервисы</a>
+        </li>
+        <li>
+          <a href="">Корпоративным клиентам</a>
+        </li>
+        <li>
+          <a href="">Продавцам техники</a>
+        </li>
+        <li>
+          <a href="">Партнерам</a>
+        </li>
+        <li>
+          <a href="">Производителям</a>
+        </li>
+        <li>
+          <a href="">Наши сервисные центры</a>
+        </li>
+        <li>
+          <a href="">Контакты</a>
+        </li>
+      </ul>
+      <section class="nav__nav-bottom">
+        <div class="nav__nav-contacts">
+          <a href="">
+            <img src="./img/icons/phone.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="./img/icons/chat.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="./img/icons/profile.svg" alt="" />
+          </a>
+        </div>
+        <a href="mailto:mail@cps.com" class="nav__nav-email">mail@cps.com</a>
+        <a href="tel:+78008908900" class="nav__nav-phone">8 800 890 8900</a>
+        <div class="nav__nav-lang">
+          <a href="" class="nav__lang_active">RU</a>
+          <a href="">EN</a>
+          <a href="">CH</a>
+        </div>
+      </section>
+    </nav>
+
+    <main class="main-container">
+      <div class="main__overlay"></div>
+      <div class="main__head-top_mobile">
+        <div class="main__head-left_mobile">
+          <button class="main__menu-open">
+            <img src="./img/icons/burger.svg" alt="" />
+          </button>
+          <div class="divider"></div>
+          <img src="./img/icons/logo.svg" alt="" />
+        </div>
+        <div class="main__head-right_mobile">
+          <a href="">
+            <img src="./img/icons/phone.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="./img/icons/chat.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="./img/icons/profile.svg" alt="" />
+          </a>
+          <div class="divider"></div>
+          <a href="">
+            <img src="./img/icons/repair.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="./img/icons/checkstatus.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <header class="main__head">
+        <div class="main__head-top">
+          <h1>Услуги и сервисы</h1>
+          <div class="main__head-top-buttons">
+            <a href="">
+              <span>Оставить заявку</span>
+              <img src="./img/icons/repair.svg" alt="" />
+            </a>
+            <a href="">
+              <span>Статус ремонта</span>
+              <img src="./img/icons/checkstatus.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="category-wrapper swiper">
+          <div class="main__categories swiper-wrapper">
+            <a href="" class="">Ремонтируемые бренды</a>
+            <a href="" class="">Дополнительные услуги</a>
+            <a href="" class="">Цены на услуги</a>
+            <a href="" class="">Адреса сервисных центров</a>
+            <a href="" class="">Специальные цены</a>
+            <a href="" class="">Отзывы</a>
+          </div>
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+      </header>
+      <article>
+        <section class="main__about-us">
+          <div class="main__about-us-text">
+            <p>
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </p>
+            <br />
+            <p>
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера, что подтверждает большое количество постоянных клиентов.
+              Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+              очередь, советуют нас родным и близким.
+            </p>
+            <a href=""
+              ><img src="./img/icons/expand.svg" alt="" />
+              <span>Читать далее</span></a
+            >
+          </div>
+
+          <aside class="main__about-us-image">
+            <img src="./img/cps_image.png" alt="" />
+          </aside>
+        </section>
+        <section class="main__repair">
+          <p class="main__repair-heading">Ремонт техники различных брендов</p>
+          <div class="swiper">
+            <div class="main__repair-brands swiper-wrapper">
+              <a href="" class="main__brand-card">
+                <img src="./img/lenovo.png" alt="" />
+                <img src="./img/icons/go.svg" alt="" />
+              </a>
+              <a href="" class="main__brand-card">
+                <img src="./img/samsung.png" alt="" />
+                <img src="./img/icons/go.svg" alt="" />
+              </a>
+              <a href="" class="main__brand-card">
+                <img src="./img/apple.png" alt="" />
+                <img src="./img/icons/go.svg" alt="" />
+              </a>
+              <a href="" class="main__brand-card">
+                <img src="./img/viewsonic.png" alt="" />
+                <img src="./img/icons/go.svg" alt="" />
+              </a>
+              <a href="" class="main__brand-card">
+                <img src="./img/bosch.png" alt="" />
+                <img src="./img/icons/go.svg" alt="" />
+              </a>
+              <a href="" class="main__brand-card">
+                <img src="./img/hp.png" alt="" />
+                <img src="./img/icons/go.svg" alt="" />
+              </a>
+              <a href="" class="main__brand-card">
+                <img src="./img/acer.png" alt="" />
+                <img src="./img/icons/go.svg" alt="" />
+              </a>
+              <a href="" class="main__brand-card">
+                <img src="./img/sony.png" alt="" />
+                <img src="./img/icons/go.svg" alt="" />
+              </a>
+            </div>
+            <div class="swiper-pagination swiper_mobile"></div>
+          </div>
+          <a href="" class="main__repair-expand">
+            <img src="./img/icons/expand.svg" alt="" />
+            <span>Показать все</span>
+          </a>
+        </section>
+      </article>
+      <footer class="footer">
+        <div class="footer-container">
+          <p>
+            © 2019 CPS <br />
+            Разработано командой Apesong
+          </p>
+          <a href="">Политика конфиденциальности</a>
+          <p>
+            Информация, размещенная на данной странице,<br />
+            не является публичной офертой
+          </p>
+        </div>
+      </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

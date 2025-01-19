@@ -1,0 +1,378 @@
+@font-face {
+    font-family: "TT Lakes";
+    src: url("./fonts/TTLakesCompressed-Black.woff");
+    font-weight: 900;
+}
+@font-face {
+    font-family: "TT Lakes";
+    src: url("./fonts/TTLakesCondensed-Bold.woff");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "TT Lakes";
+    src: url("./fonts/TTLakes-Medium.woff");
+    font-weight: 500;
+}
+
+:root{
+    --black: #1B1C21;
+    --grey: #7E7E82;
+    --accent-color: #41F6D7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "TT Lakes";
+    color: var(--black);
+}
+
+h1{
+    font-size: 1.75rem;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+/* НАВИГАЦИЯ */
+.nav{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 30px 29px 32px 22px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 306px;
+}
+
+.nav__nav-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__logo-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.nav__nav-close_mobile{
+    background: transparent;
+    border: none;
+    display: none;
+}
+
+.nav__nav-links{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 37px;
+}
+
+.nav__nav-links a:hover{
+    color: var(--grey);
+    position: relative
+}
+.nav__nav-links a:hover::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    left: -20px;
+}
+
+.nav__nav-bottom{
+    margin-top:auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__nav-contacts{
+    display: flex;
+    gap: 16px;
+}
+.nav__nav-email{
+    margin: 16px 0 12px;
+}
+.nav__nav-phone{
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+
+.nav__lang_active{
+    color: var(--grey);
+}
+
+/* ОСНОВАНАЯ ЧАСТЬ - ШАПКА */
+
+.main-container{
+    padding-left: 306px;
+    background-color: #F8F8F8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__head{
+    padding: 42px 30px 7px 35px;
+}
+
+.main__head-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__head-top_mobile{
+    display: none;
+}
+
+
+.main__head-top h1{
+    position: relative;
+}
+
+.main__head-top h1::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    left: -33px;
+}
+
+.main__categories a{
+    display: inline-block;
+    padding: 8px 22px;
+    border: solid 2px transparent;
+    border-radius: 6px;
+    color: var(--grey);
+}
+.main__categories a:hover{
+    border-color:  #B8FFEC;
+    background-color: #ffffff;
+}
+
+.main__head-top-buttons{
+    display: flex;
+    gap: 32px;
+}
+.main__head-top-buttons a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+.main__about-us{
+    padding:0 28px 51px 34px;
+    display: flex;
+    gap: 36px;
+}
+
+.main__about-us-image img{
+    border-radius: 6px;
+}
+
+.main__repair{
+    overflow: hidden;
+}
+
+.main__repair-heading{
+    background-image: linear-gradient(to right, #ffffff00, #ffffff);
+    border-top: solid 1px #D9FFF5;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    color: var(--grey);
+}
+
+
+.main__repair-brands{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 72px 72px;
+    gap: 16px 32px;
+    padding: 24px 32px;
+}
+.swiper_mobile{
+    display: none;
+}
+
+
+.main__brand-card{
+    background-color: #ffffff;
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    border-radius: 6px;
+    align-items: center;
+   
+}
+
+.main__brand-card img{
+    /* height: 90%; */
+    max-width: 70%;
+    max-height: 100%;
+}
+.main__repair-expand{
+    padding-left: 31px;
+}
+
+
+/* ФУТЕР */
+
+.footer{
+    margin-top: auto;
+    padding: 21px 33px 21px 31px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container a, .footer-container p{
+    color: var(--grey);
+}
+
+
+
+@media (max-width:768px) {
+    .main-container{
+        padding: 0;
+        position: relative;
+    }
+
+    .main__overlay{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #fffffff5;
+        transform: translateX(-100%);
+    }
+
+    .nav{
+        transform: translateX(-100%);
+        transition: 0.5s;
+        z-index: 10;
+    }
+
+    .main__head{
+        overflow: hidden;
+    }
+    .main__head-top_mobile{
+        display: flex;
+        justify-content: space-between;
+        background-color: #ffffff;
+        padding: 24px;
+    }
+    .main__head-top-buttons{
+        display: none;
+    }
+
+    .main__categories {
+        display: flex;
+        width: max-content;
+    }
+    .main__categories a{
+        width: max-content;
+    }
+
+    .nav__nav-close_mobile{
+        display: block;
+    }
+    .main__head-right_mobile, .main__head-left_mobile{
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+    .divider{
+        width: 2px;
+        height: 32px;
+        background-color: #EAEAEA;
+        margin: 0 4px;
+    }
+    .main__menu-open{
+        background-color: transparent;
+        border: none;
+    }
+
+    .main__about-us-image, .main__about-us-text {
+        width: 50%;
+    }
+    .main__about-us-image img{
+        width: 100%;
+    }
+
+
+    .main__repair-brands{
+        gap: 16px 24px;
+        grid-template-columns: repeat(4, minmax(224px, 240px));
+    }
+  
+        
+}
+
+@media (max-width:320px) {
+    .main__head-left_mobile .divider,
+    .main__head-right_mobile a:first-child,
+    .main__head-right_mobile a:nth-child(2),
+    .main__head-right_mobile a:nth-child(3){
+        display: none;
+    }
+
+    .main__head-right_mobile .divider{
+        margin-left: 20px;
+    }
+
+    
+    .main__about-us{
+        flex-direction: column;
+    }
+
+    .main__about-us p:nth-of-type(2){
+        display: none;
+    }
+
+    .main__about-us-image, 
+    .main__about-us-text{
+        width: 100%;
+    }
+    
+    .main__about-us-image img{
+        width: 100%;
+    }
+
+    .main__repair-brands{
+        display: flex;
+        gap: 0;
+        padding: 40px 0;
+    }
+    .main__repair-brands a{
+        /* width: max-content; */
+        height: 72px;
+        width: 240px;
+        /* margin: 0 16px; */
+        
+    }
+    .swiper_mobile{
+        display: block;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+}
